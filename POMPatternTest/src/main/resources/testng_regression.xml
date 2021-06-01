@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Testng POM Sanity Test Automation Suite">
+	<test name="Different pages of CRM feature Test for sanity">
+
+		<parameter name='email' value='ritutest@gmail.com' />
+		<parameter name='url' value='https://login.yahoo.com/' />
+
+		<classes>
+			<class name="com.eportal.qa.testcases.LoginPageTest" />
+			<class name="com.eportal.qa.testcases.HomePageTest" />
+		</classes>
+
+	</test>
+</suite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testng POM Pattern Test Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.eportal.qa.util.ExtentReporterNG"/>
+  </listeners>
+  <test name="Different pages feature Test(failed)">
+    <parameter name="email" value="ritutest@gmail.com"/>
+    <parameter name="url" value="https://login.yahoo.com/"/>
+    <classes>
+      <class name="com.eportal.qa.testcases.HomePageTest">
+        <methods>
+          <include name="ValidateContactsClick"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.eportal.qa.testcases.HomePageTest -->
+      <class name="com.eportal.qa.testcases.ContactsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validateclickoncontactstable"/>
+          <include name="setUp"/>
+          <include name="ValidateifContactsLabelpresent"/>
+        </methods>
+      </class> <!-- com.eportal.qa.testcases.ContactsPageTest -->
+    </classes>
+  </test> <!-- Different pages feature Test(failed) -->
+</suite> <!-- Failed suite [Testng POM Pattern Test Automation Suite] -->
